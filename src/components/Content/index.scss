@@ -15,6 +15,7 @@ $mustard: #d7b344;
   grid-template-columns: repeat(29, minmax(0, 1fr));
   width: 100%;
   max-width: 1240px;
+  margin: auto;
 }
 
 .sg-content__inner-left {
@@ -69,6 +70,8 @@ $mustard: #d7b344;
   width: 100%;
   max-width: 1240px;
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .customers-container {
