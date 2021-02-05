@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+$red: #a1151a;
+$grey: #848484;
+
+.sg-header {
+  font-family: "Nunito", sans-serif;
+  background-color: whitesmoke;
+  padding: 30px 100px;
+}
+
+.sg-header__inner-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.sg-header__main {
+  display: flex;
+  flex-direction: column;
+  width: 780px;
+}
+
+.sg-header-content--top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sg-header-content--top .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-inline-start: 0;
+  width: 95px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 38px;
+}
+
+.sg-header-content--top .login {
+  padding-left: 27px;
+  border-left: 1px solid $grey;
+}
+
+.sg-header-content--top .login .login-button {
+  font-size: 18.75px;
+}
+
+.sg-header-content--top .login .chevron {
+  font-size: 20px;
+  margin-left: 10px;
+  transform: translateY(1px);
+}
+
+.sg-header-content--top .login .chevron .open {
+  transition: transform 0.5s;
+  transform: rotate(-180deg);
+}
+
+.sg-header-content--top .login .chevron .closed {
+  transition: transform 0.5s;
+}
+
+.sg-header-content--top .social-links li a i {
+  color: $red;
+}
+
+.sg-header-content--top .social-links li a .fa-instagram {
+  font-size: 25px;
+}
+
+.sg-header-content--top .social-links li a .fa-facebook-f {
+  font-size: 18px;
+}
+
+.sg-header-content--top .social-links li a .fa-twitter {
+  font-size: 18px;
+}
+
+.sg-header-content--middle {
+  width: 100%;
+  padding: 12.5px 0;
+  transition: height 0.5s;
+}
+
+.sg-header-content--middle.closed {
+  height: 0;
+}
+
+.sg-header-content--middle.open {
+  height: 100px;
+}
+
+.sg-header-content--bottom .nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.sg-header-content--bottom .nav-list li a {
+  text-decoration: none;
+  font-size: 20.75px;
+  color: dimgrey;
+}
+
+// reset button styles
+.sg-header button {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.sg-header button::-moz-focus-inner,
+.sg-header input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

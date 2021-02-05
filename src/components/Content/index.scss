@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+$red: #a1151a;
+$grey: #848484;
+$mustard: #d7b344;
+
+.sg-content {
+  padding: 100px;
+  font-family: "Nunito", sans-serif;
+}
+
+.sg-content__inner-container {
+  display: grid;
+  grid-template-columns: repeat(29, minmax(0, 1fr));
+  width: 100%;
+  max-width: 1240px;
+}
+
+.sg-content__inner-left {
+  grid-column: 1 / 13;
+  display: flex;
+  align-items: center;
+}
+
+.sg-content__inner-left .content-image-container {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: -14px;
+  border-radius: 10px;
+  background-color: $mustard;
+}
+
+.sg-content__inner-left .content-image {
+  position: relative;
+  top: -10px;
+  left: 14px;
+  border-radius: 10px;
+}
+
+.sg-content__inner-right {
+  grid-column: 15 / 30;
+  position: relative;
+  text-align: left;
+}
+
+.sg-content__inner-right h1 {
+  color: black;
+  font-family: "Cormorant Infant", serif;
+  font-size: 80px;
+}
+
+.sg-content__inner-right h1 .italic {
+  color: black;
+  font-style: italic;
+}
+
+.sg-content__inner-right h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+}
+
+.sg-content__icons {
+  display: grid;
+  grid-template-columns: repeat(29, minmax(0, 1fr));
+  width: 100%;
+  max-width: 1240px;
+  margin-top: 100px;
+}
+
+.customers-container {
+  grid-column: 4 / 9;
+}
+
+.suppliers-container {
+  grid-column: 13 / 18;
+}
+
+.team-container {
+  grid-column: 22 / 27;
+}
+
+.sg-content__icons h3 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 37px;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sg-content__icons h4 {
+  font-size: 23px;
+  font-weight: 300;
+  text-align: center;
+  color: $grey;
+  white-space: nowrap;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.sg-content__icons h4::after {
+  content: url(../../assets/triangle.png);
+  position: relative;
+  right: -10px;
+  top: 0;
+}
