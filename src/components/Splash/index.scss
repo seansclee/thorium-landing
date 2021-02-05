@@ -10,6 +10,10 @@ $mustard: #d7b344;
   padding: 100px;
   font-family: "Nunito", sans-serif;
   position: relative;
+
+  @media (max-width: 922px) {
+    padding: 50px;
+  }
 }
 
 .sg-splash__inner-container {
@@ -23,12 +27,24 @@ $mustard: #d7b344;
 .sg-splash__inner-left {
   grid-column: 1 / 12;
   text-align: left;
+
+  @media (max-width: 600px) {
+    grid-column: 1 / 30;
+  }
 }
 
 .sg-splash__inner-left h1 {
   color: white;
   font-family: "Cormorant Infant", serif;
   font-size: 80px;
+
+  @media (max-width: 1200px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 922px) {
+    font-size: 40px;
+  }
 }
 
 .sg-splash__inner-left h1 .italic {
@@ -41,6 +57,10 @@ $mustard: #d7b344;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
+
+  @media (max-width: 922px) {
+    font-size: 14px;
+  }
 }
 
 .sg-splash__inner-left .portfolio-button {
@@ -51,10 +71,19 @@ $mustard: #d7b344;
   font-weight: 700;
   padding: 20px 60px;
   margin-top: 30px;
+
+  @media (max-width: 922px) {
+    font-size: 14px;
+    padding: 15px 45px;
+  }
 }
 
 .sg-splash__inner-right {
   grid-column: 14 / 30;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .sg-splash__inner-right .graphics-container--outer {

@@ -80,7 +80,29 @@ const Header = () => {
               open: loginOpen,
               closed: !loginOpen,
             })}
-          ></div>
+          >
+            <form className="login-form">
+              <label for="username">Username:</label>
+              <br />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+              />
+              <br />
+              <label for="password">Password:</label>
+              <br />
+              <input
+                type="text"
+                id="password"
+                name="password"
+                placeholder="Enter password"
+              />
+              <br />
+              <input className="login-button" type="submit" value="Log In" />
+            </form>
+          </div>
 
           <div className="sg-header-content--bottom">
             <ul className="nav-list">

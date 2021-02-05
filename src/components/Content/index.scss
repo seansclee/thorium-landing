@@ -8,6 +8,10 @@ $mustard: #d7b344;
 .sg-content {
   padding: 100px;
   font-family: "Nunito", sans-serif;
+
+  @media (max-width: 922px) {
+    padding: 50px;
+  }
 }
 
 .sg-content__inner-container {
@@ -22,6 +26,10 @@ $mustard: #d7b344;
   grid-column: 1 / 13;
   display: flex;
   align-items: center;
+
+  @media (max-width: 600px) {
+    grid-column: 1 / 30;
+  }
 }
 
 .sg-content__inner-left .content-image-container {
@@ -44,12 +52,25 @@ $mustard: #d7b344;
   grid-column: 15 / 30;
   position: relative;
   text-align: left;
+
+  @media (max-width: 600px) {
+    grid-column: 1 / 30;
+    margin-top: 50px;
+  }
 }
 
 .sg-content__inner-right h1 {
   color: black;
   font-family: "Cormorant Infant", serif;
   font-size: 80px;
+
+  @media (max-width: 1200px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 922px) {
+    font-size: 40px;
+  }
 }
 
 .sg-content__inner-right h1 .italic {
@@ -62,6 +83,10 @@ $mustard: #d7b344;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
+
+  @media (max-width: 922px) {
+    font-size: 14px;
+  }
 }
 
 .sg-content__icons {
@@ -76,14 +101,67 @@ $mustard: #d7b344;
 
 .customers-container {
   grid-column: 4 / 9;
+
+  @media (max-width: 922px) {
+    grid-column: 1 / 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-image {
+      max-width: 200px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .content-image {
+      max-width: 150px;
+    }
+  }
 }
 
 .suppliers-container {
   grid-column: 13 / 18;
+
+  @media (max-width: 922px) {
+    grid-column: 1 / 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-image {
+      max-width: 200px;
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .content-image {
+      max-width: 150px;
+    }
+  }
 }
 
 .team-container {
   grid-column: 22 / 27;
+
+  @media (max-width: 922px) {
+    grid-column: 1 / 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-image {
+      max-width: 200px;
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .content-image {
+      max-width: 150px;
+    }
+  }
 }
 
 .sg-content__icons h3 {
@@ -93,6 +171,10 @@ $mustard: #d7b344;
   white-space: nowrap;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @media (max-width: 922px) {
+    font-size: 24px;
+  }
 }
 
 .sg-content__icons h4 {
@@ -103,6 +185,11 @@ $mustard: #d7b344;
   white-space: nowrap;
   margin-top: 15px;
   margin-bottom: 0;
+
+  @media (max-width: 922px) {
+    font-size: 16px;
+    margin: 0;
+  }
 }
 
 .sg-content__icons h4::after {
